@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import Header from './components/header/Header';
+import Header from './modules/header/Header';
 
 function App() {
   return (
