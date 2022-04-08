@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Monoton&family=Press+Start+2P&display=swap');
+$olympic: 'Monton', cursive;
+
+#score-container {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: $olympic;
+}

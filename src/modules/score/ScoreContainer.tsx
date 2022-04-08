@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from '../../core/hooks';
 import Player from './player/Player';
-import './Score.scss';
+import './ScoreContainer.scss';
 import { changeScore, PlayerState } from './scoreSlice';
 
 function ScoreContainer(): JSX.Element {
@@ -19,11 +19,13 @@ function ScoreContainer(): JSX.Element {
 
     return (
         <div id="score-container">
-            <div className="left-player">
-                <Player player={score.leftPlayer} onScoreChanged={onLeftPlayerScoreChange} />
-            </div>
-            <div className="right-player">
-                <Player player={score.rightPlayer} onScoreChanged={onRightPlayerScoreChange} />
+            <div id="players">
+                <div className="left-player player">
+                    <Player player={score.leftPlayer} onScoreChanged={onLeftPlayerScoreChange} />            
+                </div>
+                <div className="right-player player">
+                    <Player player={score.rightPlayer} onScoreChanged={onRightPlayerScoreChange} />
+                </div>
             </div>
         </div>
     );

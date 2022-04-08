@@ -1,45 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Monoton&family=Press+Start+2P&display=swap');
+
+$scorefont: 'Codystar', bold;
+$pixelated: 'Press Start 2P', cursive;
+$scoreboardfontclr: #eed9e6;
+$scoreboardbgclr: #180712;
+
 .player {
+    font-family: $pixelated;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h3 {
-        text-decoration: underline;
+        font-size: 1.5em;
+        margin: 0;
     }
 
     .player-score {
-        width: 3em;
-        height: 3em;
+        width: 2em;
+        height: 2em;
+        margin: 0.1em;
+        border-radius: 0.5em;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.6em;
+        font-size: 10em;
+        font-family: $scorefont;
+        background-color: $scoreboardbgclr;
+        color: $scoreboardfontclr;
     }
-
-    button {
-        background: none;
-        border: none;
-        padding: 0;
-        margin: 0;
+    .Buttons{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 4em;
-        height: 4em;
-
-        svg {
-            fill: #ffffff;
-            width: 100%;
-            height: 100%;
-        }
-
-        &.up {
-            background: #157305;
-        }
-
-        &.down {
-            background: #ad1002;
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 4em;
+            height: 4em;
+    
+            svg {
+                fill: #ffffff;
+                width: 100%;
+                height: 100%;
+            }
+    
+            &.up {
+                background: #157305;
+            }
+    
+            &.down {
+                background: #ad1002;
+            }
         }
     }
 }

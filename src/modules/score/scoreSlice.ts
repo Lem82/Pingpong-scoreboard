@@ -13,11 +13,13 @@ interface ScoreState {
 const initialState: ScoreState = {
     leftPlayer: {
         name: 'Player 1',
-        score: 10
+        score: 10,
+        matchpoint: 1
     } as PlayerState,
     rightPlayer: {
         name: 'Player 2',
-        score: 5
+        score: 5,
+        matchpoint: 2
     } as PlayerState
 };
 
