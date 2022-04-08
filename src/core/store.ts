@@ -1,7 +1,8 @@
 import { configureStore, ThunkAction, Action, combineReducers } from '@reduxjs/toolkit';
 import score from '../modules/score/scoreSlice';
+import signalr from '../core/signalr/signalrSlice';
 
-const reducer = combineReducers({ score });
+const reducer = combineReducers({ signalr, score });
 
 export const store = configureStore({ reducer });
 
