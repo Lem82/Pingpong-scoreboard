@@ -8,4 +8,8 @@ $olympic: 'Monton', cursive;
     justify-content: space-evenly;
     flex-direction: column;
     font-family: $olympic;
+
+    #players {
+        display: flex;
+    }
 }
