@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './core/store';
+import { SignalrProvider } from './core/signalr/SignalrProvider';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <SignalrProvider>
+        <App />
+      </SignalrProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
