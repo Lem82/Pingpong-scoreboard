@@ -2,7 +2,7 @@ import { createSlice, current, Draft, PayloadAction } from "@reduxjs/toolkit";
 
 export interface PlayerState {
     readonly name: string;
-    readonly score: number;
+    score: number;
 }
 
 interface ScoreState {
