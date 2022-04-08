@@ -1,24 +1,24 @@
 import { createSlice, current, Draft, PayloadAction } from "@reduxjs/toolkit";
 
-interface Player {
+export interface PlayerState {
     readonly name: string;
     readonly score: number;
 }
 
 interface ScoreState {
-    readonly leftPlayer: Player;
-    readonly rightPlayer: Player;
+    readonly leftPlayer: PlayerState;
+    readonly rightPlayer: PlayerState;
 }
 
 const initialState: ScoreState = {
     leftPlayer: {
         name: 'Markku',
         score: 10
-    } as Player,
+    } as PlayerState,
     rightPlayer: {
         name: 'Jani',
         score: 5
-    } as Player
+    } as PlayerState
 };
 
 const scoreSlice = createSlice({

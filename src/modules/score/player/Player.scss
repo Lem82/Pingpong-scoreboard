@@ -1,0 +1,45 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        text-decoration: underline;
+    }
+
+    .player-score {
+        width: 3em;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6em;
+    }
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+
+        svg {
+            fill: #ffffff;
+            width: 100%;
+            height: 100%;
+        }
+
+        &.up {
+            background: #157305;
+        }
+
+        &.down {
+            background: #ad1002;
+        }
+    }
+}
