@@ -7,11 +7,21 @@ function ScoreContainer(): JSX.Element {
 
     return (
         <div id="score-container">
-            <div className="left-player">
-                <Player player={score.leftPlayer} />
+            <div id="players">
+                <div className="left-player player">
+                    {score.leftPlayer.name}            
+                </div>
+                <div className="right-player player">
+                    {score.rightPlayer.name}
+                </div>
             </div>
-            <div className="right-player">
-                <Player player={score.rightPlayer} />
+            <div id="score-board">
+                <div className="left-score score">
+                    {score.leftPlayer.score}            
+                </div>
+                <div className="right-score score">
+                    {score.rightPlayer.score}
+                </div>
             </div>
         </div>
     );

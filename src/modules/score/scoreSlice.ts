@@ -12,11 +12,11 @@ interface ScoreState {
 
 const initialState: ScoreState = {
     leftPlayer: {
-        name: 'Markku',
+        name: 'Player 1',
         score: 10
     } as PlayerState,
     rightPlayer: {
-        name: 'Jani',
+        name: 'Player 2',
         score: 5
     } as PlayerState
 };
