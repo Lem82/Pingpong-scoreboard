@@ -20,10 +20,10 @@ function ScoreContainer(): JSX.Element {
     return (
         <div id="score-container">
             <div id="players">
-                <div className="left-player player">
+                <div className="left-player">
                     <Player player={score.leftPlayer} onScoreChanged={onLeftPlayerScoreChange} />            
                 </div>
-                <div className="right-player player">
+                <div className="right-player">
                     <Player player={score.rightPlayer} onScoreChanged={onRightPlayerScoreChange} />
                 </div>
             </div>
