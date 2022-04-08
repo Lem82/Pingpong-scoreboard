@@ -17,14 +17,14 @@ $scoreboardbgclr: #180712;
     }
 
     .player-score {
-        width: 2em;
-        height: 2em;
+        width: 15rem;
+        height: 17rem;
         margin: 0.1em;
-        border-radius: 0.5em;
+        border-radius: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 10em;
+        font-size: 10rem;
         font-family: $scorefont;
         background-color: $scoreboardbgclr;
         color: $scoreboardfontclr;
@@ -41,8 +41,8 @@ $scoreboardbgclr: #180712;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            width: 6em;
-            height: 6em;
+            width: 6rem;
+            height: 6rem;
     
             svg {
                 fill: #ffffff;
